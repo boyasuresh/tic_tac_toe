@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <hr>
+    <marquee behavior="alternate" direction="right"><h3 class="displayresults"></h3></marquee>
+    <div class="container">
+        <div class="row1">
+            <div class="box">
+                <div class="select" data-number="1" onClick="changeColor()"></div>
+                <div class="select" data-number="2" onClick="changeColor()"></div>
+                <div class="select" data-number="3" onClick="changeColor()"></div>
+            </div>
+            <div class="box">
+                <div class="select" data-number="4" onClick="changeColor()"></div>
+                <div class="select" data-number="5" onClick="changeColor()"></div>
+                <div class="select" data-number="6" onClick="changeColor()"></div>
+            </div>
+            <div class="box">
+                <div class="select" data-number="7" onClick="changeColor()"></div>
+                <div class="select" data-number="8" onClick="changeColor()"></div>
+                <div class="select" data-number="9" onClick="changeColor()"></div>
+            </div>
+        </div>
+        <div class="row2">
+            <h3>Rules:</h3>
+            <ul>
+                <li>game will start with player 1</li>
+                <li class="players">player 1 color is Red and player 2 color is green</li>
+                <div class="red">player-1</div>
+                <div class="green">player-2</div>
+                <li>The first player to get three of their colors in a row (horizontally, vertically, or diagonally) wins the game.</li>
+            </ul>
+            <div class="results">
+                <div class="head">Games Played: <span class="games">0</span></div>
+                <div>Player 1 Wins: <span class="player1">0</span></div>
+                <div>Player 2 Wins: <span class="player2">0</span></div>
+            </div>
+            <button onClick="endGame()">End Game</button>
+        </div>
+    </div>
+</body>
+</html>
