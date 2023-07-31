@@ -31,8 +31,13 @@ function changeColor(event) {
     updateGameCounter();
     updatePlayerWins(winner);
     resetBoard();
-    
     }
+    else if (!arr.includes(-1)) {
+      gamesPlayed++;
+      updateGameCounter();
+      alert("It's a Draw");
+      resetBoard();
+  }
 }
 
 function check(i) {
